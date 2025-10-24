@@ -12,7 +12,6 @@ export function KeyboardMovement({ speed = 0.05, children }: Props) {
   const keyboard = useKeyboard()
   const ref = useRef<THREE.Group>(null!)
 
-
   useFrame(() => {
     if (keyboard["w"]) {
       ref.current.position.z -= speed
@@ -26,7 +25,6 @@ export function KeyboardMovement({ speed = 0.05, children }: Props) {
     if (keyboard["d"]) {
       ref.current.position.x += speed
     }
-
   })
 
   return <group ref={ref}>{children}</group>
