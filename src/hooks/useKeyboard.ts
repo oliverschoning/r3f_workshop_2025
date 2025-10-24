@@ -1,5 +1,5 @@
 import { atom, useAtom } from "jotai"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 
 const keysAtom = atom<{ [key: string]: boolean }>({})
@@ -9,7 +9,6 @@ let initialized = false;
 export function useKeyboard() {
   const [keys, setKeys] = useAtom(keysAtom)
   useEffect(() => {
-    console.log(initialized)
     if (initialized) {
       return
     }
