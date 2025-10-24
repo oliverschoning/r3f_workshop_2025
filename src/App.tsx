@@ -15,6 +15,7 @@ export default function App() {
           <a href='/examples/viverse-third-person'>examples/viverse-third-person</a>
           <a href='/examples/viverse-first-person'>examples/viverse-first-person</a>
           <a href='/examples/hello-xr'>examples/hello-xr</a>
+          <a href='/examples/hello-xr-physics'>examples/hello-xr-physics</a>
           <a href='/examples/keyboard-movement-example'>examples/keyboard-movement-example</a>
         </div>
       </Route>
@@ -23,8 +24,9 @@ export default function App() {
       <Route path="/examples/viverse-third-person" component={examples.ViverseThirdPerson} />
       <Route path="/examples/viverse-first-person" component={examples.ViverseFirstPerson} />
       <Route path="/examples/hello-xr" component={examples.HelloXR} />
+      {/* <Route path="/examples/hello-xr-physics" component={examples.HelloXRPhysics} /> */}
       <Route path="/examples/keyboard-movement-example" component={examples.KeyboardMovementExample} />
-      <Route path="/examples/presentation" component={examples.Presentation} />
+      {/* <Route path="/examples/presentation" component={examples.Presentation} /> */}
     </Switch>
   )
 }
