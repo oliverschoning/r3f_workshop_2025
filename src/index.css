@@ -17,3 +17,13 @@ html, body {
   z-index: 10;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  a {
+    color: #3b82f6;
+  }
+}
